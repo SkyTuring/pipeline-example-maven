@@ -2,7 +2,7 @@ stages:
 - name: Build
   steps:
   - runScriptConfig:
-      image: reg.800best.com/bestapp/bestmvn:3.3.9
+      image: maven:3-jdk-7
       shellScript: |-
         mvn clean install
 - name: Publish
